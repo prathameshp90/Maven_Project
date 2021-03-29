@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-03-24T10:31:55 EDT" name="Suite" finished-at="2021-03-24T10:32:09 EDT" duration-ms="14629">
+    <groups>
+    </groups>
+    <test started-at="2021-03-24T10:31:55 EDT" name="Test1" finished-at="2021-03-24T10:32:03 EDT" duration-ms="8509">
+      <class name="CompleteProj.E2EProj.HomePage">
+        <test-method is-config="true" signature="initialize(org.testng.ITestContext)[pri:0, instance:CompleteProj.E2EProj.HomePage@41a90fa8]" started-at="2021-03-24T10:31:55 EDT" name="initialize" finished-at="2021-03-24T10:31:56 EDT" duration-ms="1531" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1afd72ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="basePageNavigative(java.lang.String, java.lang.String)[pri:0, instance:CompleteProj.E2EProj.HomePage@41a90fa8]" started-at="2021-03-24T10:31:56 EDT" name="basePageNavigative" data-provider="getData" finished-at="2021-03-24T10:32:03 EDT" duration-ms="6879" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonrestricteduser@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigative -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:CompleteProj.E2EProj.HomePage@41a90fa8]" started-at="2021-03-24T10:32:03 EDT" name="teardown" finished-at="2021-03-24T10:32:03 EDT" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- CompleteProj.E2EProj.HomePage -->
+    </test> <!-- Test1 -->
+    <test started-at="2021-03-24T10:32:03 EDT" name="Test2" finished-at="2021-03-24T10:32:09 EDT" duration-ms="5915">
+      <class name="CompleteProj.E2EProj.NavigationBar">
+        <test-method is-config="true" signature="initialize(org.testng.ITestContext)[pri:0, instance:CompleteProj.E2EProj.NavigationBar@6d1d4d7]" started-at="2021-03-24T10:32:03 EDT" name="initialize" finished-at="2021-03-24T10:32:09 EDT" duration-ms="5285" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2cc75074]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="basePageNavigative(java.lang.String, java.lang.String)[pri:0, instance:CompleteProj.E2EProj.NavigationBar@6d1d4d7]" started-at="2021-03-24T10:32:09 EDT" name="basePageNavigative" data-provider="getData" finished-at="2021-03-24T10:32:09 EDT" duration-ms="31" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonrestricteduser@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [FEATURED COURSES123] but found [FEATURED COURSES]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [FEATURED COURSES123] but found [FEATURED COURSES]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at CompleteProj.E2EProj.NavigationBar.basePageNavigative(NavigationBar.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigative -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:CompleteProj.E2EProj.NavigationBar@6d1d4d7]" started-at="2021-03-24T10:32:09 EDT" name="teardown" finished-at="2021-03-24T10:32:09 EDT" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- CompleteProj.E2EProj.NavigationBar -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>
